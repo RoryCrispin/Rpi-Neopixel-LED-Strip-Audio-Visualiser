@@ -27,7 +27,9 @@ class ledStrip(object):
         strip.show()
 
 class canvas(object):
-    def __init__(self):
+    def __init__(self, length):
+        for i in length:
+            self.pixels[i] = 
 
 
 # LED strips exist as a chain of objects, from individual RGBLEDs>Groups of LEDs> Canvases> Physical strip
