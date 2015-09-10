@@ -1,3 +1,5 @@
+# FOR REFERENCE ONLY, NOT USED IN THIS PROJECT
+
 # NeoPixel library strandtest example
 # Author: Tony DiCola (tony@tonydicola.com)
 #
