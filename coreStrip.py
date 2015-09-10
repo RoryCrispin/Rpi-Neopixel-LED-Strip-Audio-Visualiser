@@ -15,8 +15,12 @@ class LedStrip(object):
         self.strip.show()
 
     def write_canvas(self, canvas):
+        index=0 #TODO: TEST CODE
         for i in canvas.pixels:
-            self.strip.setPixelColour(i, canvas.pixels[i])
+            self.strip.setPixelColor(index, i.colour.neoColour())
+            #self.strip.setPixelColor(index, i.read_neocolour)
+            #self.strip.setPixelColor(index, canvas.pixels[index].colour.neoColour)
+            index = index+1
         self.output()
 
 

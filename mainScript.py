@@ -14,9 +14,12 @@ def init_script():
 
 ledStrip = init_script()
 
-canvas = canvasHandler.Canvas(strip=ledStrip)
+canvas = canvasHandler.Canvas(length = 300)
 
-for i in canvas.length:
-    canvas.set_pixel(i, coreRGB.blue)
-
-ledStrip.writeCanvas(canvas)
+while True:
+    for i in range(0,canvas.length):
+        canvas.set_pixel(i, coreRGB.green)
+    ledStrip.write_canvas(canvas)
+    for i in range(0,canvas.length):
+        canvas.set_pixel(i, coreRGB.blue)
+    ledStrip.write_canvas(canvas)

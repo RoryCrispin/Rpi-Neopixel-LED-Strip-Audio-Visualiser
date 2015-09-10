@@ -1,3 +1,5 @@
+from neopixel import *
+
 class rgbColour(object):
     red = 0
     green = 0
@@ -13,6 +15,10 @@ class rgbColour(object):
             self.blue = blue
         else:
             self.safe_brightnessF(red, green, blue, safe_brightness)
+
+
+    def neoColour(self):
+        return Color(self.red, self.green, self.blue)
 
     def with_brightness(self, multiplier):
         return rgbColour(
